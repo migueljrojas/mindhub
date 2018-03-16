@@ -2,17 +2,35 @@
 
     $h: &;
 
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background: $mainColor;
+    z-index: 1000;
+    height: 75px;
+    padding: 0;
+
+    &__container {
+        position: relative;
+        height: 100%;
+
+        @include mq(md){
+            display: flex;
+        }
+    }
+
     &__hamburguer {
         cursor: pointer;
         width: 25px;
         height: 25px;
         margin: auto;
         position: absolute;
-        right: 32px;
-        top: 30px;
+        right: 15px;
+        top: 25px;
 
         span {
-            background-color: $mainColor;
+            background-color: $white;
             border-radius: 2px;
             content: '';
             display: block;
@@ -33,26 +51,214 @@
                 animation-direction:reverse;
             }
         }
-    }
 
-    &.-open {
-        #{$h}__hamburguer {
-            span:nth-child(1) {
-                animation:inT 0.6s $easing forwards;
-            }
-            span:nth-child(2) {
-                animation:inM 0.6s $easing forwards;
-            }
-            span:nth-child(3) {
-                animation:inBtm 0.6s $easing forwards;
-            }
-        }
-
-        #{$h}__nav {
-
+        @include mq(md){
+            display: none;
         }
     }
+
+    &__logo {
+        position: absolute;
+        top: 15px;
+        width: 120px;
+        height: 50px;
+
+        @include mq(md){
+            left: 40px;
+
+        }
+
+        img {
+            height: 40px;
+
+            @include mq(md){
+                height: 60px;
+
+            }
+        }
+    }
+
+    &__nav {
+        @include trans;
+
+        position: fixed;
+        top:75px;
+        bottom:0;
+        right:0;
+        width:100%;
+        background: transparentize($mainColor, .1);
+        transform: translateX(100%);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: $black;
+        border-top: 1px solid $black;
+
+        @include mq(md){
+            position: absolute;
+            transform: translateX(0);
+            background: transparent;
+            padding: 0;
+            width: auto;
+            display: block;
+            right: 0;
+            top: 15px;
+            border: none;
+        }
+    }
+
+   &__menu {
+
+       @include mq(md){
+           display: flex;
+
+           @include mq(md){
+               justify-content: flex-start;
+               text-align: left;
+               margin-bottom: 0;
+           }
+       }
+
+       & > li{
+           position: relative;
+
+           @include mq(md){
+               margin-left: 40px;
+           }
+
+           &:not(:last-child){
+               border-bottom: 1px dotted $midGray;
+
+               @include mq(md){
+                   border: none;
+               }
+           }
+
+           &:hover {
+               & > #{$h}__submenu {
+                   max-height: 180px;
+                   padding: 10px 0 0;
+               }
+           }
+       }
+
+       & > li > a{
+           @include trans;
+
+           color:$white;
+           font-weight: 500;
+           font-size: $xl;
+           display: block;
+           padding: 0 40px;
+           height: 50px;
+           display: block;
+           line-height: 50px;
+           font-family: $altFont;
+           text-transform: uppercase;
+
+
+           @include mq(md){
+               position: relative;
+               font-size: 14px;
+               font-weight: 500;
+               letter-spacing: -0.1px;
+               height: 50px;
+               display: flex;
+               line-height: 50px;
+               margin-bottom: 0;
+               padding: 0;
+               justify-content: space-between;
+               align-items: center;
+
+               &:before {
+                   @include trans;
+
+                   content: '';
+                   position: absolute;
+                   bottom: 0;
+                   height: 2px;
+                   background: $link;
+                   width: 0;
+               }
+           }
+
+           i.material-icons {
+               display: none;
+
+               @include mq(md) {
+                   display: inline-block;
+                   color: $lightGray;
+                   margin-left: 10px;
+               }
+           }
+
+           &:hover {
+               color: $altColor;
+
+               &:before {
+                   width: 100%;
+               }
+           }
+       }
+   }
+
+   &__submenu {
+       @include trans;
+       padding: 10px 0 10px 40px;
+       border-top: 1px dotted $midGray;
+       background: $lightestGray;
+
+       @include mq(md) {
+           position: absolute;
+           top: 100%;
+           background: $lightGray;
+           border: none;
+           padding: 0;
+           max-height: 0;
+           overflow: hidden;
+       }
+
+       a {
+           color:$black;
+           font-weight: 500;
+           padding-left: 20px;
+           display: block;
+           text-transform: uppercase;
+           font-size: $lg;
+
+           @include mq(md){
+               font-size: $md;
+               padding: 0;
+               height: 40px;
+               line-height: 40px;
+               padding: 0 15px;
+
+               &:hover {
+                   background: $lightestGray;
+               }
+           }
+       }
+   }
+
+   &.-open {
+       #{$h}__hamburguer {
+           span:nth-child(1) {
+               animation:inT 0.6s $easing forwards;
+           }
+           span:nth-child(2) {
+               animation:inM 0.6s $easing forwards;
+           }
+           span:nth-child(3) {
+               animation:inBtm 0.6s $easing forwards;
+           }
+       }
+
+       #{$h}__nav {
+           transform: translateX(0);
+       }
+   }
 }
+
 
 //hamburguer animations
 @keyframes inM{

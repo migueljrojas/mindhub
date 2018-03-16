@@ -1,4 +1,182 @@
 extends _layouts/base
 
+include _modules/slider/slider
+include _modules/pagination/pagination
+
+
 block content
     main.home
+        section#home.home__hero
+            +slider('home__hero__slider')
+                each item, index in site.data.home.hero.slider
+                    .home__hero__slide
+                        .home__hero__slide__img
+                            img(src=item.img)
+                        .home__hero__slide__data(class="home__hero__slide__data--#{index + 1}")
+                            .home__hero__slide__quote(class="home__hero__slide__quote--#{index + 1}")!= item.quote
+                            
+        section#que-es-mindhub.home__whatweare
+            .container
+                .row
+                    .col-xs-24.col-sm-12
+                        h1.home__whatweare__title= site.data.home.whatweare.title
+                        each p in site.data.home.whatweare.text
+                            p.home__whatweare__text!= p
+                    .col-xs-24.col-sm-12
+                        .home__whatweare__graph
+                    
+        section.home__ubiqum
+            .container-fluid
+                .row
+                    .col-xs-24.col-sm-20.col-sm-offset-2.col-md-16.col-md-offset-4
+                        h2.home__ubiqum__title= site.data.home.ubiqum.title
+                        p.home__ubiqum__text= site.data.home.ubiqum.text
+                .row.nopadding
+                    each item in site.data.home.ubiqum.features
+                        .col-xs-24.col-sm-8
+                            .home__ubiqum__feature
+                                h3.home__ubiqum__feature__title!= item.title
+                                .home__ubiqum__feature__icon
+                                    img(src=item.icon)
+                                p.home__ubiqum__feature__text= item.text
+                    
+        
+        section#cursos.home__courses
+            .container-fluid
+                .row.nopadding
+                    .col-xs-24
+                        h2.home__courses__title= site.data.home.courses.title
+                    .col-xs-24
+                        +slider('home__courses__slider', 'multi')
+                            each item in site.data.home.courses.list
+                                .home__courses__slide
+                                    .home__courses__item(id="item.id", class="home__courses__item--#{item.id}")
+                                        .home__courses__item__icon
+                                            img(src=item.icon)
+                                            span Ubiqum
+                                        h3.home__courses__item__title!= item.title
+                                        p.home__courses__item__desc= item.desc
+                                        a.home__courses__item__moreinfo(href=item.url) Más información
+                                        a.home__courses__item__cta(href="#", data-modal="open", data-select=item.id) Estoy interesado
+                                    
+        section.home__modes
+            .container
+                .row
+                    .col-xs-24
+                        h2.home__modes__title=site.data.home.modes.title
+                    .col-xs-24
+                        .home__modes__list
+                            each mode in site.data.home.modes.list
+                                .home__modes__item
+                                    .home__modes__item__icon
+                                        img(src=mode.icon)
+                                    h3.home__modes__item__title= mode.name
+                                    p.home__modes__item__text= mode.text
+                                
+                    
+        section.home__interstitial.home__interstitial--one
+            .home__interstitial__overlay
+            .home__interstitial__quote
+                .home__interstitial__quote__icon
+                    img(src="/images/home/icon-quote.png")
+                p.home__interstitial__quote__text!= site.data.home.interstitial.one.text
+                span.home__interstitial__quote__author= site.data.home.interstitial.one.author
+            
+        section.home__payment
+            .container-fluid
+                .row
+                    .col-xs-24.col-sm-16.home__payment__plans
+                        h2.home__payment__plans__title= site.data.home.payment.plans.title
+                        ul.home__payment__plans__list
+                            each item in site.data.home.payment.plans.list
+                                .home__payment__plan
+                                    .home__payment__plan__icon
+                                        img(src=item.icon)
+                                    h3.home__payment__plan__title= item.name
+                                    p.home__payment__plan__text= item.text
+                                    
+                    .col-xs-24.col-sm-8.home__payment__medios
+                        h2.home__payment__medios__title= site.data.home.payment.medios.title
+                        img(src="/images/home/payments.png")
+                        h3.home__payment__medios__subtitle= site.data.home.payment.medios.subtitle
+        
+        section#nosotros.home__about
+            .container
+                .row
+                    .col-xs-24.col-sm-10
+                        h2.home__about__title= site.data.home.about.title
+                        each p in site.data.home.about.text
+                            p.home__about__text= p
+                    .col-xs-24.col-sm-12.col-sm-offset-2
+                        +slider('home__about__slider')
+                            each item in site.data.home.about.list
+                                .home__about__slide
+                                    .home__about__slide__img
+                                        img(src=item.img)
+                                    if item.data
+                                        .home__about__slide__data
+                                            h3.home__about__slide__name= item.data.name
+                                            ul.home__about__slide__social
+                                                each red in item.data.social
+                                                    li
+                                                        a(href=red.url, target="_blank")
+                                                            i(class="fa fa-#{red.name}")
+            
+        section#se-parte.home__bepart
+            .home__bepart__overlay
+            .container.home__bepart__container
+                .row
+                    .col-xs-24
+                        h2.home__bepart__title= site.data.home.bepart.title
+                        h3.home__bepart__subtitle= site.data.home.bepart.subtitle
+                        
+            .home__bepart__companies
+                .container
+                    .row
+                        .col-xs-24
+                            h3.home__bepart__companies__title Mindhub Empresas
+                        each item in site.data.home.bepart.companies
+                            .col-xs-12.col-sm-6
+                                img.home__bepart__companies__logo(src=item)
+                a.home__bepart__companies__cta(href="#", data-modal="open") Sumate ahora
+        
+        section.home__interstitial.home__interstitial--two
+            .home__interstitial__overlay
+            .home__interstitial__quote
+                .home__interstitial__quote__icon
+                    img(src="/images/home/icon-quote.png")
+                p.home__interstitial__quote__text!= site.data.home.interstitial.two.text
+                span.home__interstitial__quote__author= site.data.home.interstitial.two.author
+                
+        section#eventos-prensa.home__press
+            .container-fluid
+                .row
+                    .col-xs-24
+                        h2.home__press__title= site.data.home.press.title
+                    .col-xs-24.col-sm-16
+                        h3.home__press__testimonials__title= site.data.home.press.testimonials.title
+                        +slider('home__press__testimonials__slider')
+                            each item in site.data.home.press.testimonials.list
+                                .home__press__testimonials__slide
+                                    .home__press__testimonials__slide__img
+                                        img(src=item.img)
+                                    .home__press__testimonials__slide__data
+                                        h4.home__press__testimonials__slide__name= item.name
+                                        span.home__press__testimonials__slide__date= item.date
+                                        p.home__press__testimonials__slide__text= item.text
+                                        
+                    .col-xs-24.col-sm-8
+                        .home__press__news
+                            ul.home__press__news__list
+                                each item in site.data.home.press.news
+                                    li.home__press__news__item
+                                        .home__press__news__item__img
+                                            img(src=item.img)
+                                        .home__press__news__item__data
+                                            h4.home__press__news__item__title= item.title
+                                            p.home__press__news__item__text= item.text
+                                            a.home__press__news__item__link(href=item.url) Seguir leyendo
+                            .home__press__news__pagination
+                                +pagination(3)
+            
+        include _modules/contacto/contacto

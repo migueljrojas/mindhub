@@ -1,3 +1,218 @@
 {
-    
+    "hero":{
+        "slider":[
+            {
+                "img":"/images/home/slide1.jpg",
+                "quote":"<span>we build</span> <strong>future</strong> <span>skills</span>"
+            },
+            {
+                "img":"/images/home/slide2.jpg",
+                "quote":"<span>capacitate en Mindhub</span> <strong>y empezá a trabajar </strong>"
+            },
+            {
+                "img":"/images/home/slide3.jpg",
+                "quote":"<span>Tu empleabilidad</span> <strong>es nuestro compromiso</strong>"
+            }
+        ]
+    },
+    "whatweare":{
+        "title":"Qué es MindHub?",
+        "text":[
+            "Mindub crea un ecosistema de individuos y empresas de tecnología y pure digital, con el objetivo de ayudar a  los alumno@s a cruzar el puente entre su <strong>capacitación en tecnología y la inserción en el mercado laboral.</strong>",
+            "Todos nuestros programas están diseñados para que te capacites y accedas a una nueva profesión en el campo de la tecnología o progreses en ella si ya tenés experiencia.",
+            "<strong>Innovar es tu desafio, emplearte es nuestro compromiso.</strong>"
+        ]
+    },
+    "ubiqum":{
+        "title":"Ubiqum Code Academy",
+        "text":"Traemos a la Argentina el bootcamp de Ubiqum, uno de los más prestigiosos de Europa, con headquarters en Barcelona y sedes en Berlín y Amsterdam",
+        "features":[
+            {
+                "icon":"/images/home/icon-metodologia.png",
+                "title":"metodología <strong>learning by doing</strong>",
+                "text":"Cursos totalmente prácticos y enfocados a lo que las empresas tecnológicas estan buscando."
+            },
+            {
+                "icon":"/images/home/icon-coaching.png",
+                "title":"Apoyo y <strong>coaching</strong>",
+                "text":"Apoyo profesional en el desarrollo de habilidades blandas y de industria."
+            },
+            {
+                "icon":"/images/home/icon-trabajo.png",
+                "title":"Encontrá <strong>trabajo</strong>",
+                "text":"Te ayudamos a conseguir trabajo. ¡Aprendé, progresá, trabajá!"
+            }
+        ]
+    },
+    "courses":{
+        "title":"Nuestros cursos",
+        "list":[
+            {
+                "id":"full-stack",
+                "icon":"/images/home/icon-full-stack.png",
+                "title":"Java Web Full Stack Developer",
+                "desc":"Recomendado para principiantes que quieren conseguir un trabajo relacionado con el Desarrollo Web y Mobile. Adquirirás experiencia en front y back-end de inestimable valor para potenciales empleadores.",
+                "url":"/cursos/java-web-full-stack-developer"
+            },
+            {
+                "id":"big-data",
+                "icon":"/images/home/icon-full-stack.png",
+                "title":"Data Analyst & Big Data",
+                "desc":"Las personas interesadas en el análisis de datos han de tener experiencia previa trabajando con números y algoritmos o una fuerte motivación para hacerlo ahora.",
+                "url":"/cursos/data-analyst-big-data"
+            },
+            {
+                "id":"cyber-security",
+                "icon":"/images/home/icon-full-stack.png",
+                "title":"Cyber<br>Seguridad",
+                "desc":"Próximamente tendremos grandes novedades en esta área!",
+                "url":"/cursos/cyber-security"
+            }
+        ]
+    },
+    "modes":{
+        "title":"Modalidad",
+        "list":[
+            {
+                "icon":"/images/home/icon-fulltime.png",
+                "name":"Full Time",
+                "text":"De lunes a viernes, días hábiles de 9 a 18 hs"
+            },
+            {
+                "icon":"/images/home/icon-parttime.png",
+                "name":"Part time",
+                "text":"De lunes a Jueves, días hábiles de 18 a 22 hs"
+            }
+        ]
+    },
+    "interstitial":{
+        "one":{
+            "text":"<span>ONCE YOU</span><strong>STOP LEARNING</strong><span>YOU START</span><strong>DYING</strong>",
+            "author":"Albert Einstein"
+        },
+        "two":{
+            "text":"<strong>THE BRIGHTER YOU ARE</strong><span>THE MORE YOU HAVE</span><strong>TO LEARN</strong>",
+            "author":"Don Herald"
+        }
+    },
+    "payment":{
+        "plans":{
+            "title":"Financiá tu futuro",
+            "list":[
+                {
+                    "icon":"/images/home/descuento-healscamp.png",
+                    "name":"Healscamp",
+                    "text":"Si sos una chica queriendo abrirte camino en el mundo de la tecnologia, acá tenes tu lugar."
+                },
+                {
+                    "icon":"/images/home/descuento-twistcamp.png",
+                    "name":"Twistcamp",
+                    "text":"Si sos un profesional con experiencia mayor a 40 años, queremos tenerte con nosotros."
+                },
+                {
+                    "icon":"/images/home/descuento-friends.png",
+                    "name":"Friends & Family",
+                    "text":"Si tenes un amig@ o familiar con tus mismas ganas, traelo."
+                }
+            ]
+        },
+        "medios":{
+            "title":"Formas de Pago",
+            "subtitle":"Hasta 12 cuotas"
+        }
+    },
+    "about":{
+        "title":"Quienes Somos",
+        "text":[
+            "Somos tres mujeres ejecutivas, ex socias de Accenture, una de las empresas líderes en tecnología e Innovación, que después de haber desarrollado nuestras carreras a lo largo de Latinoamérica, decidimos emprender este proyecto.",
+            "Hemos ejecutado proyectos complejos, formamos equipos de trabajo diversos y enfrentando grandes desafíos. Hoy, como socias y co-fundadoras de MindHub queremos volcar toda esa experiencia en las oportunidades que representan la transformación digital actual y el futuro de empleo."
+        ],
+        "list":[
+            {
+                "img":"/images/home/founders.jpg"
+            },
+            {
+                "img":"/images/home/founder-1.jpg",
+                "data":{
+                    "name":"Jane Doe",
+                    "social":[
+                        {
+                            "name":"linkedin",
+                            "url":"http://linkedin.com"
+                        },
+                        {
+                            "name":"envelope-o",
+                            "url":"mailto:jane@mindhubweb.com"
+                        }
+                    ]
+                }
+            },
+            {
+                "img":"/images/home/founder-2.jpg",
+                "data":{
+                    "name":"Mary Pierce",
+                    "social":[
+                        {
+                            "name":"linkedin",
+                            "url":"http://linkedin.com"
+                        },
+                        {
+                            "name":"envelope-o",
+                            "url":"mailto:mary@mindhubweb.com"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "bepart":{
+        "title":"Forma parte de nuestro ecosistema",
+        "subtitle":"Proveemos de perfiles altamente capacitados en las tecnologías que tu Empresa necesita",
+        "companies":[
+            "/images/home/accenture.png",
+            "/images/home/infobae.png",
+            "/images/home/wenance.png",
+            "/images/home/almundo.png"
+        ]
+    },
+    "press":{
+        "title":"Eventos y Prensa",
+        "testimonials":{
+            "title":"Testimonios de Alumnos y Empresas",
+            "list":[
+                {
+                    "img":"/images/home/testimonial-1.jpg",
+                    "name":"John Doe",
+                    "date":"Estudio en Enero 2018",
+                    "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+                },
+                {
+                    "img":"/images/home/testimonial-2.jpg",
+                    "name":"Juan Perez",
+                    "date":"Contrató en Marzo 2017",
+                    "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+                }
+            ]
+        },
+        "news":[
+            {
+                "img":"/images/home/news.jpg",
+                "title":"El pasaje estándar Lorem Ipsum, usado desde el 1500",
+                "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...",
+                "url":"/noticia"
+            },
+            {
+                "img":"/images/home/news.jpg",
+                "title":"El pasaje estándar Lorem Ipsum, usado desde el 1500",
+                "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...",
+                "url":"/noticia"
+            },
+            {
+                "img":"/images/home/news.jpg",
+                "title":"El pasaje estándar Lorem Ipsum, usado desde el 1500",
+                "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...",
+                "url":"/noticia"
+            }
+        ]
+    }
 }

@@ -2,12 +2,18 @@
     transition: $prop $d $e;
 }
 
-@mixin title($size: $lg, $color: $white, $align: 'left') {
-    text-transform: uppercase;
-    font-size: $size;
+@mixin title($sizeM: 36px, $size:48px, $weight: 700, $color: $mainColor) {
+    font-size: $sizeM;
+    font-weight: $weight;
     color: $color;
-    text-align: #{$align};
+    margin: 0 0 40px;
+    text-transform: uppercase;
+
+    @include mq(sm){
+        font-size: $size;
+    }
 }
+
 
 @mixin padd($mode: both) {
     @if $mode == both {

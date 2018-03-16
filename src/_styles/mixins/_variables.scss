@@ -6,10 +6,14 @@ $darkGray: #787871;
 $midGray: #999;
 $lightGray: #ebebeb;
 $lightestGray: #f4f7f8;
-$blue: #053f7a;
-$blueGray: #bbc9c9;
+$orange: #ff4500;
+$orangeLite: #ffaf00;
+$fullStack:#9fc70e;
+$bigData: #00ccff;
+$cyberSecurity: #f61339;
 
-$mainColor: $blue;
+$mainColor: $orange;
+$altColor: $orangeLite;
 $link: $mainColor;
 $linkHover: $mainColor + #333;
 $text: $white;
@@ -35,4 +39,5 @@ $duration: 0.3s;
 $easing: cubic-bezier(.785, .135, .15, .86);
 $easingLight: ease;
 
-$mainFont: 'Open Sans', sans-serif;
+$mainFont: 'Lato', sans-serif;
+$altFont: 'Montserrat', sans-serif;

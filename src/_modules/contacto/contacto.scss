@@ -1,0 +1,148 @@
+// contacto styles
+.contacto {
+    color: $lightGray;
+
+    &__mainrow {
+        @include mq(sm){
+
+            display: flex;
+        }
+    }
+
+    &__maincol{
+        padding-top: 40px;
+        background: $darkestGray;
+
+        @include mq(sm){
+            padding-left: 40px !important;
+            padding-right: 40px !important;
+        }
+    }
+
+    &__heading {
+        color: $white;
+        display: flex;
+    }
+
+    &__social {
+        display: flex;
+        padding-top: 15px;
+
+        li {
+            margin-right: 10px;
+        }
+
+        a{
+            color: $white;
+        }
+    }
+
+    &__title {
+        @include title($color:$white);
+        padding-right: 20px;
+    }
+
+    &__newsletter {
+        &__col {
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            background: $darkestGray - #111;
+
+            @include mq(sm){
+                padding-left: 40px !important;
+                padding-right: 40px !important;
+            }
+        }
+    }
+
+    &__form {
+        $f: &;
+
+        &__group {
+            padding: 25px 0 10px;
+            position: relative;
+        }
+
+        &__label {
+            display: block;
+            font-weight: 700;
+            font-size: 14px;
+            color: $altColor;
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            transform: translateY(100%);
+            @include trans;
+        }
+
+        &__input {
+            display: block;
+            height: 32px;
+            line-height: 32px;
+            border:none;
+            width: 100%;
+            padding: 0 10px;
+            background: transparent;
+            border-bottom: 1px solid $white;
+            font-size: 18px;
+
+            &--textarea {
+                height: 120px;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+
+                & + #{$f}__label {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+                &::placeholder {
+                    opacity: 0;
+                }
+            }
+
+            &::placeholder {
+                @include trans;
+            }
+        }
+
+        &__cta {
+            @include trans;
+            background: $mainColor;
+            height: 40px;
+            border: none;
+            padding: 0 30px;
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: $altFont;
+            font-size: 14px;
+            line-height: 40px;
+
+            &:hover {
+                background: $altColor;
+            }
+        }
+    }
+
+    &__data {
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+
+            i {
+                font-size: 24px;
+                color: $white;
+            }
+
+            p {
+                flex-basis: 90%;
+            }
+        }
+    }
+}

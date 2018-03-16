@@ -1,0 +1,29 @@
+.pagination {
+    display: flex;
+
+    li {
+        background: $midGray;
+        color: $text;
+        font-family: $altFont;
+        font-weight: 700;
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 10px;
+        border-radius: 50%;
+
+        &:first-child {
+            background: $mainColor;
+            color: $white;
+        }
+
+        &-compact {
+            font-size: 12px;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+        }
+    }
+}

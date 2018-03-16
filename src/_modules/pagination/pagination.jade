@@ -1,0 +1,5 @@
+mixin pagination(pages, mode)
+    ul.pagination(class=mode)
+        - for (var i = 0; i < pages; ++i) {
+          li=i+1
+        - }

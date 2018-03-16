@@ -2,8 +2,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>PROYECT TITLE</title>
-  <meta name="description" content="A new Yeogurt application">
+  <title>MindHub</title>
+  <meta name="description" content="MindHub">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/main.css">
 </head>
@@ -11,27 +11,405 @@
   <!--[if lt IE 11]>
   <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <svg style="height:0;width:0;position:absolute;">
-      <symbol viewBox="0 0 162.4 66.7" id="logo">
-          <g>
-               <path d="M120.5,35.9c-8.5,0-15.1,6.3-15.1,15.5c0,9.3,6.3,15.4,15.1,15.4c8.5,0,15.1-6.2,15.1-15.5 C135.6,41.9,129.3,35.9,120.5,35.9z M120.7,63c-4.7,0-7.3-3.6-7.3-11.8c0-8.1,2.3-11.8,7-11.8c4.7,0,7.3,3.7,7.3,11.8 C127.7,59.4,125.4,63,120.7,63z"/>
-               <path d="M152.3,48c-4.4-1.1-7.7-1.7-7.7-4.7c0-2,1.6-3.8,4.6-3.8c3.8,0,6,2,7.9,6.8h3.9V35.9H157l-0.9,3.2 c-1.5-2.1-4.3-3.3-7.5-3.3c-5.7,0-10.3,3.9-10.3,9.3c0,6.6,5.5,8.2,10.3,9.4c4.5,1.1,7.5,1.8,7.5,4.5c0,2.3-1.8,3.9-5,3.9 c-4.7,0-7.2-2.3-9.1-7.3H138v10.9h3.9l1.1-3.5c1.7,2.1,4.9,3.6,8.5,3.6c6.4,0,10.8-4,10.8-9.6C162.3,50.7,157,49.2,152.3,48z"/>
-               <path d="M76.7,62.7c-0.7,0-1.1-0.2-1.1-1.3v-9.5c0-4.3-2.2-7.3-8.5-7.3c-5.1,0-9.9,1.8-9.9,5.7c0,1.7,1.1,3.1,3.4,3.1 c1.8,0,3.2-1.2,3.2-2.8c0-1-0.4-1.8-1.1-2.3c0.8-0.4,1.8-0.5,2.7-0.5c2.6,0,3.8,1,3.8,3.7v1.8c0,0.5-0.2,0.6-2.7,0.9 c-5.1,0.7-7.3,1.6-8.7,3c-0.9,0.9-1.5,2.2-1.5,3.6c0,3.4,2.7,5.5,6.4,5.5c3.1,0,5.6-1.3,6.9-4.4h0.2c0.4,3.1,2.4,4.4,4.9,4.4 c3,0,4.7-1.6,5.5-5l-2.2-0.7C77.7,62.2,77.2,62.7,76.7,62.7z M69.2,58c0,2.7-1.4,4.6-3.4,4.6c-2,0-2.8-1.3-2.8-2.7c0-2,1-3,4.2-3.6 c1.1-0.2,1.6-0.3,2-0.4V58z"/>
-               <path d="M16.1,62.5C11,62.5,8,59.1,8,51c0-8.4,3-11.5,7.2-11.5c3.7,0,6.2,2.7,8,8.1h4.4V35.9h-4l-0.9,3.4c-1.8-2.2-4.6-3.5-8.4-3.5 C6.5,35.9,0,42.3,0,51.5c0,9.1,5.9,15.2,15.1,15.2c8,0,12.3-4.9,13.1-12.5h-4.3C23.1,59.1,20.5,62.5,16.1,62.5z"/>
-               <path d="M101.6,35.1h-9.7v3.8h3.2v9.2c-1.3-2.1-3.3-3.6-6.3-3.6c-2.2,0-4.1,0.8-5.5,2.2c-1.9,1.9-3,5.1-3,8.8 c0,3.6,0.9,6.7,2.9,8.6c1.3,1.3,3.1,2.2,5.4,2.2c3.4,0,5.7-1.9,7-4.8V66h9.1v-3.7h-3V35.1z M91.3,62.6c-2.6,0-4-2.4-4-6.9 c0-4.6,1.3-7.2,4-7.2c3,0,4.2,3.1,4.2,7C95.5,59.6,93.9,62.6,91.3,62.6z"/>
-               <path d="M52.4,52c0-4.3-1.9-7.4-6.4-7.4c-3.4,0-5.6,2-7.2,5.1V35.1h-9.6v3.8h3v23.3h-3V66h11.9v-3.7h-2.3v-8.2c0-3,1.9-5.1,4-5.1 c0.9,0,1.6,0.3,2.1,0.7c0.7,0.7,0.9,1.8,0.9,3.2v9.4h-2.4V66h11.9v-3.7h-3V52z"/>
-               <path d="M117.3,33.5c6.4,0,11.3-4.6,11.3-11c0-6.4-4.7-10.8-11.3-10.8c-6.5,0-11.4,4.6-11.4,11C106,29.1,110.6,33.5,117.3,33.5z M117.1,14.6c2.9,0,4.3,2.2,4.3,7.9c0,5.6-1.2,7.9-4,7.9s-4.3-2.2-4.3-7.9C113.1,16.9,114.3,14.6,117.1,14.6z"/>
-               <path d="M145.4,29.1h-4.2v-8.9h3.7c3.3,0,4.1,1.3,4.1,4.6l0,1.5c0,4.9,2.1,7.3,6.7,7.3c4,0,5.8-2.7,6.7-6.2l-2.6-0.8 c-0.6,2-1.2,2.6-1.8,2.6c-0.9,0-1.3-0.4-1.4-2.4l-0.1-1.7c-0.1-3.5-2-6-7.6-6.5v-0.3c6.9-0.8,9.1-3.7,9.1-7.2c0-3.7-3-7.5-11.9-7.5 H130v3.9h4v21.6h-4V33h15.5V29.1z M141.3,7.3h4c3.8,0,4.9,1.5,4.9,4.5c0,3.4-1.5,4.7-5,4.7h-3.9V7.3z"/>
-               <path d="M49.6,33.5c5.9,0,8.8-2.9,9.6-7.2h-3.5c-0.9,2.6-2.5,3.7-5,3.7c-3.3,0-5.3-1.6-5.5-6.5h14.3c0.3-6.8-3-11.8-10.1-11.8 c-6.3,0-11,4.8-11,11.1C38.4,29.2,42.6,33.5,49.6,33.5z M49.3,14.6c2.4,0,3.6,1.7,3.8,5.9h-7.8C45.5,16.1,46.9,14.6,49.3,14.6z"/>
-               <path d="M36,16.3C36,6.5,29.7,0,16.3,0H1.5v4.4H6v24.3H1.5V33h15.1C29.9,33,36,26,36,16.3z M14.2,4.3h2.5c7.5,0,10.4,3.4,10.4,12.1 c0,9.2-2.8,12.4-10,12.4h-2.9V4.3z"/>
-               <path d="M94.5,33.5c5.3,0,8.4-3.1,9.4-7.6h-3.5c-0.9,2.4-2.5,3.8-4.9,3.8c-3.5,0-5.3-2.9-5.3-7.2c0-4.8,2.2-7.6,5.1-7.6 c1.7,0,2.8,0.6,3.4,1.4c-0.9,0.4-1.9,1.4-1.9,2.8c0,1.7,1.2,3.2,3.4,3.2c2.3,0,3.6-1.6,3.6-3.8c0-3.2-3.1-6.8-9.1-6.8 c-6.8,0-11.5,4.6-11.5,11.3C83.2,29.2,87.4,33.5,94.5,33.5z"/>
-               <path d="M66.3,30.6c1.3,1.5,3.5,2.9,6.8,2.9c5.1,0,7.9-3.3,7.9-6.9c0-4.2-3.1-5.6-7.6-6.8c-4-1-5.2-1.6-5.2-3.1c0-1.2,0.9-2,2.6-2 c2.2,0,4.4,1.7,6,4.2h3.4v-7.2h-3.5l-0.7,2.5c-1.3-1.6-3.3-2.6-6-2.6c-4.7,0-7.6,3.1-7.6,6.8c0,3.8,2.5,5.4,7.5,6.7 c4.2,1.1,5.3,1.7,5.3,3.3c0,1.3-0.8,2.1-2.7,2.1c-2.5,0-5.1-1.9-6.9-4.7h-3.4v7.7h3.4L66.3,30.6z"/>
-          </g>
-      </symbol>
-  </svg>
-  <header class="header"></header>
-  <main class="home"></main>
-  <footer class="footer"></footer>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__logo"><a href="/"><img src="/images/logo-mindhub-blanco.png"></a></div>
+      <div class="header__hamburguer"><span></span><span></span><span></span></div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="#que-es-mindhub">Qué es MindHub</a>
+          </li>
+          <li><a href="#cursos">Nuestros Cursos</a>
+          </li>
+          <li><a href="#nosotros">Nosotros</a>
+          </li>
+          <li><a href="#se-parte">Se parte</a>
+          </li>
+          <li><a href="#eventos-prensa">Eventos y Prensa</a>
+          </li>
+          <li><a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="home">
+    <section id="home" class="home__hero">
+      <div class="_slider home__hero__slider">
+        <div class="home__hero__slide">
+          <div class="home__hero__slide__img"><img src="/images/home/slide1.jpg"></div>
+          <div class="home__hero__slide__data home__hero__slide__data--1">
+            <div class="home__hero__slide__quote home__hero__slide__quote--1"><span>we build</span> <strong>future</strong> <span>skills</span></div>
+          </div>
+        </div>
+        <div class="home__hero__slide">
+          <div class="home__hero__slide__img"><img src="/images/home/slide2.jpg"></div>
+          <div class="home__hero__slide__data home__hero__slide__data--2">
+            <div class="home__hero__slide__quote home__hero__slide__quote--2"><span>capacitate en Mindhub</span> <strong>y empezá a trabajar </strong></div>
+          </div>
+        </div>
+        <div class="home__hero__slide">
+          <div class="home__hero__slide__img"><img src="/images/home/slide3.jpg"></div>
+          <div class="home__hero__slide__data home__hero__slide__data--3">
+            <div class="home__hero__slide__quote home__hero__slide__quote--3"><span>Tu empleabilidad</span> <strong>es nuestro compromiso</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="que-es-mindhub" class="home__whatweare">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-24 col-sm-12">
+            <h1 class="home__whatweare__title">Qué es MindHub?</h1>
+            <p class="home__whatweare__text">Mindub crea un ecosistema de individuos y empresas de tecnología y pure digital, con el objetivo de ayudar a  los alumno@s a cruzar el puente entre su <strong>capacitación en tecnología y la inserción en el mercado laboral.</strong></p>
+            <p class="home__whatweare__text">Todos nuestros programas están diseñados para que te capacites y accedas a una nueva profesión en el campo de la tecnología o progreses en ella si ya tenés experiencia.</p>
+            <p class="home__whatweare__text"><strong>Innovar es tu desafio, emplearte es nuestro compromiso.</strong></p>
+          </div>
+          <div class="col-xs-24 col-sm-12">
+            <div class="home__whatweare__graph"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home__ubiqum">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-24 col-sm-20 col-sm-offset-2 col-md-16 col-md-offset-4">
+            <h2 class="home__ubiqum__title">Ubiqum Code Academy</h2>
+            <p class="home__ubiqum__text">Traemos a la Argentina el bootcamp de Ubiqum, uno de los más prestigiosos de Europa, con headquarters en Barcelona y sedes en Berlín y Amsterdam</p>
+          </div>
+        </div>
+        <div class="row nopadding">
+          <div class="col-xs-24 col-sm-8">
+            <div class="home__ubiqum__feature">
+              <h3 class="home__ubiqum__feature__title">metodología <strong>learning by doing</strong></h3>
+              <div class="home__ubiqum__feature__icon"><img src="/images/home/icon-metodologia.png"></div>
+              <p class="home__ubiqum__feature__text">Cursos totalmente prácticos y enfocados a lo que las empresas tecnológicas estan buscando.</p>
+            </div>
+          </div>
+          <div class="col-xs-24 col-sm-8">
+            <div class="home__ubiqum__feature">
+              <h3 class="home__ubiqum__feature__title">Apoyo y <strong>coaching</strong></h3>
+              <div class="home__ubiqum__feature__icon"><img src="/images/home/icon-coaching.png"></div>
+              <p class="home__ubiqum__feature__text">Apoyo profesional en el desarrollo de habilidades blandas y de industria.</p>
+            </div>
+          </div>
+          <div class="col-xs-24 col-sm-8">
+            <div class="home__ubiqum__feature">
+              <h3 class="home__ubiqum__feature__title">Encontrá <strong>trabajo</strong></h3>
+              <div class="home__ubiqum__feature__icon"><img src="/images/home/icon-trabajo.png"></div>
+              <p class="home__ubiqum__feature__text">Te ayudamos a conseguir trabajo. ¡Aprendé, progresá, trabajá!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cursos" class="home__courses">
+      <div class="container-fluid">
+        <div class="row nopadding">
+          <div class="col-xs-24">
+            <h2 class="home__courses__title">Nuestros cursos</h2>
+          </div>
+          <div class="col-xs-24">
+            <div class="_slidermulti home__courses__slider">
+              <div class="home__courses__slide">
+                <div id="item.id" class="home__courses__item home__courses__item--full-stack">
+                  <div class="home__courses__item__icon"><img src="/images/home/icon-full-stack.png"><span>Ubiqum</span></div>
+                  <h3 class="home__courses__item__title">Java Web Full Stack Developer</h3>
+                  <p class="home__courses__item__desc">Recomendado para principiantes que quieren conseguir un trabajo relacionado con el Desarrollo Web y Mobile. Adquirirás experiencia en front y back-end de inestimable valor para potenciales empleadores.</p><a href="/cursos/java-web-full-stack-developer" class="home__courses__item__moreinfo">Más información</a><a href="#" data-modal="open" data-select="full-stack" class="home__courses__item__cta">Estoy interesado</a>
+                </div>
+              </div>
+              <div class="home__courses__slide">
+                <div id="item.id" class="home__courses__item home__courses__item--big-data">
+                  <div class="home__courses__item__icon"><img src="/images/home/icon-full-stack.png"><span>Ubiqum</span></div>
+                  <h3 class="home__courses__item__title">Data Analyst & Big Data</h3>
+                  <p class="home__courses__item__desc">Las personas interesadas en el análisis de datos han de tener experiencia previa trabajando con números y algoritmos o una fuerte motivación para hacerlo ahora.</p><a href="/cursos/data-analyst-big-data" class="home__courses__item__moreinfo">Más información</a><a href="#" data-modal="open" data-select="big-data" class="home__courses__item__cta">Estoy interesado</a>
+                </div>
+              </div>
+              <div class="home__courses__slide">
+                <div id="item.id" class="home__courses__item home__courses__item--cyber-security">
+                  <div class="home__courses__item__icon"><img src="/images/home/icon-full-stack.png"><span>Ubiqum</span></div>
+                  <h3 class="home__courses__item__title">Cyber<br>Seguridad</h3>
+                  <p class="home__courses__item__desc">Próximamente tendremos grandes novedades en esta área!</p><a href="/cursos/cyber-security" class="home__courses__item__moreinfo">Más información</a><a href="#" data-modal="open" data-select="cyber-security" class="home__courses__item__cta">Estoy interesado</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home__modes">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-24">
+            <h2 class="home__modes__title">Modalidad</h2>
+          </div>
+          <div class="col-xs-24">
+            <div class="home__modes__list">
+              <div class="home__modes__item">
+                <div class="home__modes__item__icon"><img src="/images/home/icon-fulltime.png"></div>
+                <h3 class="home__modes__item__title">Full Time</h3>
+                <p class="home__modes__item__text">De lunes a viernes, días hábiles de 9 a 18 hs</p>
+              </div>
+              <div class="home__modes__item">
+                <div class="home__modes__item__icon"><img src="/images/home/icon-parttime.png"></div>
+                <h3 class="home__modes__item__title">Part time</h3>
+                <p class="home__modes__item__text">De lunes a Jueves, días hábiles de 18 a 22 hs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home__interstitial home__interstitial--one">
+      <div class="home__interstitial__overlay"></div>
+      <div class="home__interstitial__quote">
+        <div class="home__interstitial__quote__icon"><img src="/images/home/icon-quote.png"></div>
+        <p class="home__interstitial__quote__text"><span>ONCE YOU</span><strong>STOP LEARNING</strong><span>YOU START</span><strong>DYING</strong></p><span class="home__interstitial__quote__author">Albert Einstein</span>
+      </div>
+    </section>
+    <section class="home__payment">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-24 col-sm-16 home__payment__plans">
+            <h2 class="home__payment__plans__title">Financiá tu futuro</h2>
+            <ul class="home__payment__plans__list">
+              <div class="home__payment__plan">
+                <div class="home__payment__plan__icon"><img src="/images/home/descuento-healscamp.png"></div>
+                <h3 class="home__payment__plan__title">Healscamp</h3>
+                <p class="home__payment__plan__text">Si sos una chica queriendo abrirte camino en el mundo de la tecnologia, acá tenes tu lugar.</p>
+              </div>
+              <div class="home__payment__plan">
+                <div class="home__payment__plan__icon"><img src="/images/home/descuento-twistcamp.png"></div>
+                <h3 class="home__payment__plan__title">Twistcamp</h3>
+                <p class="home__payment__plan__text">Si sos un profesional con experiencia mayor a 40 años, queremos tenerte con nosotros.</p>
+              </div>
+              <div class="home__payment__plan">
+                <div class="home__payment__plan__icon"><img src="/images/home/descuento-friends.png"></div>
+                <h3 class="home__payment__plan__title">Friends &amp; Family</h3>
+                <p class="home__payment__plan__text">Si tenes un amig@ o familiar con tus mismas ganas, traelo.</p>
+              </div>
+            </ul>
+          </div>
+          <div class="col-xs-24 col-sm-8 home__payment__medios">
+            <h2 class="home__payment__medios__title">Formas de Pago</h2><img src="/images/home/payments.png">
+            <h3 class="home__payment__medios__subtitle">Hasta 12 cuotas</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="nosotros" class="home__about">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-24 col-sm-10">
+            <h2 class="home__about__title">Quienes Somos</h2>
+            <p class="home__about__text">Somos tres mujeres ejecutivas, ex socias de Accenture, una de las empresas líderes en tecnología e Innovación, que después de haber desarrollado nuestras carreras a lo largo de Latinoamérica, decidimos emprender este proyecto.</p>
+            <p class="home__about__text">Hemos ejecutado proyectos complejos, formamos equipos de trabajo diversos y enfrentando grandes desafíos. Hoy, como socias y co-fundadoras de MindHub queremos volcar toda esa experiencia en las oportunidades que representan la transformación digital actual y el futuro de empleo.</p>
+          </div>
+          <div class="col-xs-24 col-sm-12 col-sm-offset-2">
+            <div class="_slider home__about__slider">
+              <div class="home__about__slide">
+                <div class="home__about__slide__img"><img src="/images/home/founders.jpg"></div>
+              </div>
+              <div class="home__about__slide">
+                <div class="home__about__slide__img"><img src="/images/home/founder-1.jpg"></div>
+                <div class="home__about__slide__data">
+                  <h3 class="home__about__slide__name">Jane Doe</h3>
+                  <ul class="home__about__slide__social">
+                    <li><a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="mailto:jane@mindhubweb.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="home__about__slide">
+                <div class="home__about__slide__img"><img src="/images/home/founder-2.jpg"></div>
+                <div class="home__about__slide__data">
+                  <h3 class="home__about__slide__name">Mary Pierce</h3>
+                  <ul class="home__about__slide__social">
+                    <li><a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="mailto:mary@mindhubweb.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="se-parte" class="home__bepart">
+      <div class="home__bepart__overlay"></div>
+      <div class="container home__bepart__container">
+        <div class="row">
+          <div class="col-xs-24">
+            <h2 class="home__bepart__title">Forma parte de nuestro ecosistema</h2>
+            <h3 class="home__bepart__subtitle">Proveemos de perfiles altamente capacitados en las tecnologías que tu Empresa necesita</h3>
+          </div>
+        </div>
+      </div>
+      <div class="home__bepart__companies">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-24">
+              <h3 class="home__bepart__companies__title">Mindhub Empresas</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6"><img src="/images/home/accenture.png" class="home__bepart__companies__logo"></div>
+            <div class="col-xs-12 col-sm-6"><img src="/images/home/infobae.png" class="home__bepart__companies__logo"></div>
+            <div class="col-xs-12 col-sm-6"><img src="/images/home/wenance.png" class="home__bepart__companies__logo"></div>
+            <div class="col-xs-12 col-sm-6"><img src="/images/home/almundo.png" class="home__bepart__companies__logo"></div>
+          </div>
+        </div><a href="#" data-modal="open" class="home__bepart__companies__cta">Sumate ahora</a>
+      </div>
+    </section>
+    <section class="home__interstitial home__interstitial--two">
+      <div class="home__interstitial__overlay"></div>
+      <div class="home__interstitial__quote">
+        <div class="home__interstitial__quote__icon"><img src="/images/home/icon-quote.png"></div>
+        <p class="home__interstitial__quote__text"><strong>THE BRIGHTER YOU ARE</strong><span>THE MORE YOU HAVE</span><strong>TO LEARN</strong></p><span class="home__interstitial__quote__author">Don Herald</span>
+      </div>
+    </section>
+    <section id="eventos-prensa" class="home__press">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-24">
+            <h2 class="home__press__title">Eventos y Prensa</h2>
+          </div>
+          <div class="col-xs-24 col-sm-16">
+            <h3 class="home__press__testimonials__title">Testimonios de Alumnos y Empresas</h3>
+            <div class="_slider home__press__testimonials__slider">
+              <div class="home__press__testimonials__slide">
+                <div class="home__press__testimonials__slide__img"><img src="/images/home/testimonial-1.jpg"></div>
+                <div class="home__press__testimonials__slide__data">
+                  <h4 class="home__press__testimonials__slide__name">John Doe</h4><span class="home__press__testimonials__slide__date">Estudio en Enero 2018</span>
+                  <p class="home__press__testimonials__slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+              </div>
+              <div class="home__press__testimonials__slide">
+                <div class="home__press__testimonials__slide__img"><img src="/images/home/testimonial-2.jpg"></div>
+                <div class="home__press__testimonials__slide__data">
+                  <h4 class="home__press__testimonials__slide__name">Juan Perez</h4><span class="home__press__testimonials__slide__date">Contrató en Marzo 2017</span>
+                  <p class="home__press__testimonials__slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-24 col-sm-8">
+            <div class="home__press__news">
+              <ul class="home__press__news__list">
+                <li class="home__press__news__item">
+                  <div class="home__press__news__item__img"><img src="/images/home/news.jpg"></div>
+                  <div class="home__press__news__item__data">
+                    <h4 class="home__press__news__item__title">El pasaje estándar Lorem Ipsum, usado desde el 1500</h4>
+                    <p class="home__press__news__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p><a href="/noticia" class="home__press__news__item__link">Seguir leyendo</a>
+                  </div>
+                </li>
+                <li class="home__press__news__item">
+                  <div class="home__press__news__item__img"><img src="/images/home/news.jpg"></div>
+                  <div class="home__press__news__item__data">
+                    <h4 class="home__press__news__item__title">El pasaje estándar Lorem Ipsum, usado desde el 1500</h4>
+                    <p class="home__press__news__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p><a href="/noticia" class="home__press__news__item__link">Seguir leyendo</a>
+                  </div>
+                </li>
+                <li class="home__press__news__item">
+                  <div class="home__press__news__item__img"><img src="/images/home/news.jpg"></div>
+                  <div class="home__press__news__item__data">
+                    <h4 class="home__press__news__item__title">El pasaje estándar Lorem Ipsum, usado desde el 1500</h4>
+                    <p class="home__press__news__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p><a href="/noticia" class="home__press__news__item__link">Seguir leyendo</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="home__press__news__pagination">
+                <ul class="pagination">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacto" class="contacto">
+      <div class="container-fluid">
+        <div class="row contacto__mainrow">
+          <div class="col-xs-24 col-sm-16 contacto__maincol">
+            <div class="row">
+              <div class="col-xs-24 col-sm-12">
+                <div class="contacto__heading">
+                  <h2 class="contacto__title">Contacto</h2>
+                  <ul class="contacto__social">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+                <form id="form-contacto" class="contacto__form">
+                  <div class="contacto__form__group">
+                    <input type="text" placeholder="Nombre" name="nombre" id="nombre" class="contacto__form__input">
+                    <label for="nombre" class="contacto__form__label">Nombre</label>
+                  </div>
+                  <div class="contacto__form__group">
+                    <input type="email" placeholder="Email" name="email" id="email" class="contacto__form__input">
+                    <label for="email" class="contacto__form__label">Email</label>
+                  </div>
+                  <div class="contacto__form__group">
+                    <textarea placeholder="Mensaje" name="mensaje" id="mensaje" class="contacto__form__input contacto__form__input--textarea"></textarea>
+                    <label for="mensaje" class="contacto__form__label">Mensaje</label>
+                  </div>
+                  <div class="contacto__form__group">
+                    <button type="submit" class="contacto__form__cta">Enviar</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-xs-24 col-sm-12">
+                <div class="contacto__data">
+                  <div class="contacto__data__item"><i class="fa fa-map-marker"></i>
+                    <p> San Telmo Building, San Juan 701 esq. Chacabuco<br> CABA, Buenos Aires, Argentina</p>
+                  </div>
+                  <div class="contacto__data__item"><i class="fa fa-phone"></i>
+                    <p>+54 11 5279-6896</p>
+                  </div>
+                  <div class="contacto__data__item"><i class="fa fa-envelope-o"></i>
+                    <p><a href="mailto:mindhub@mindhubweb.com">mindhub@mindhubweb.com</a></p>
+                  </div>
+                  <div class="contacto__data__item">
+                    <div class="embed-responsive embed-responsive-4by3">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.301653214218!2d-58.37796668421266!3d-34.621816565964004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2c6a56f737%3A0x5ffe7beab0329b79!2sAv.+San+Juan+701%2C+C1147AAF+CABA!5e0!3m2!1ses!2sar!4v1521076978699" class="embed-responsive-item"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-24 col-sm-8 contacto__newsletter__col">
+            <div class="contacto__newsletter">
+              <h3 class="contacto__title">Suscribite al newsletter</h3>
+              <p class="contacto__text">Recibí las novedades sobre nuestros cursos y eventos</p>
+              <form id="form-newsletter" class="contacto__form">
+                <div class="contacto__form__group">
+                  <input type="email" placeholder="Email" name="newsletter-email" id="newsletter-email" class="contacto__form__input">
+                  <label for="newsletter-email" class="contacto__form__label">Email</label>
+                </div>
+                <div class="contacto__form__group">
+                  <button type="submit" class="contacto__form__cta">Suscribir</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-24">
+          <div class="footer__items"><img src="/images/logo-mindhub.png">
+            <p>&copy; 2018. Todos los derechos reservados</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="./scripts/main.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
   <script>new WOW().init();</script>

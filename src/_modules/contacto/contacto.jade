@@ -1,0 +1,56 @@
+section#contacto.contacto
+    .container-fluid
+        .row.contacto__mainrow
+            .col-xs-24.col-sm-16.contacto__maincol
+                .row
+                    .col-xs-24.col-sm-12
+                        .contacto__heading
+                            h2.contacto__title Contacto
+                            ul.contacto__social
+                                each red in site.data.social
+                                    li
+                                        a(href=red.url, target="_blank")
+                                            i(class="fa fa-#{red.name}")
+                        form.contacto__form(id="form-contacto")
+                            .contacto__form__group
+                                input.contacto__form__input(type="text", placeholder="Nombre", name="nombre", id="nombre")
+                                label.contacto__form__label(for="nombre") Nombre
+                            .contacto__form__group
+                                input.contacto__form__input(type="email", placeholder="Email", name="email", id="email")
+                                label.contacto__form__label(for="email") Email
+                            .contacto__form__group
+                                textarea.contacto__form__input.contacto__form__input--textarea(placeholder="Mensaje", name="mensaje", id="mensaje")
+                                label.contacto__form__label(for="mensaje") Mensaje
+                            .contacto__form__group
+                                button.contacto__form__cta(type="submit") Enviar
+                                
+                    .col-xs-24.col-sm-12
+                        .contacto__data
+                            .contacto__data__item
+                                i.fa.fa-map-marker
+                                p
+                                    |  San Telmo Building, San Juan 701 esq. Chacabuco
+                                    br
+                                    |  CABA, Buenos Aires, Argentina
+                            .contacto__data__item
+                                i.fa.fa-phone
+                                p +54 11 5279-6896
+                            .contacto__data__item
+                                i.fa.fa-envelope-o
+                                p
+                                    a(href="mailto:mindhub@mindhubweb.com") mindhub@mindhubweb.com
+                            .contacto__data__item
+                                .embed-responsive.embed-responsive-4by3
+                                    iframe.embed-responsive-item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.301653214218!2d-58.37796668421266!3d-34.621816565964004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2c6a56f737%3A0x5ffe7beab0329b79!2sAv.+San+Juan+701%2C+C1147AAF+CABA!5e0!3m2!1ses!2sar!4v1521076978699")
+
+            .col-xs-24.col-sm-8.contacto__newsletter__col
+                .contacto__newsletter
+                    h3.contacto__title Suscribite al newsletter
+                    p.contacto__text Recibí las novedades sobre nuestros cursos y eventos
+                    form.contacto__form(id="form-newsletter")
+                        .contacto__form__group
+                            input.contacto__form__input(type="email", placeholder="Email", name="newsletter-email", id="newsletter-email")
+                            label.contacto__form__label(for="newsletter-email") Email
+                        .contacto__form__group
+                            button.contacto__form__cta(type="submit") Suscribir
+                        

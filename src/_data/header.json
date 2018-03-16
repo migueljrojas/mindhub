@@ -1,6 +1,26 @@
 [
     {
-        "name":"",
-        "url":""
+        "name":"Qué es MindHub",
+        "url":"#que-es-mindhub"
+    },
+    {
+        "name":"Nuestros Cursos",
+        "url":"#cursos"
+    },
+    {
+        "name":"Nosotros",
+        "url":"#nosotros"
+    },
+    {
+        "name":"Se parte",
+        "url":"#se-parte"
+    },
+    {
+        "name":"Eventos y Prensa",
+        "url":"#eventos-prensa"
+    },
+    {
+        "name":"Contacto",
+        "url":"#contacto"
     }
 ]
