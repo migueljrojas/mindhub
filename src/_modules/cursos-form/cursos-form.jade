@@ -1,0 +1,28 @@
+mixin cursos-form()
+
+    form.cursos__form
+        h2.cursos__form__title Pre-Inscribite ahora
+        button.cursos__form__toggle
+            i.material-icons keyboard_arrow_right
+        .cursos__form__left
+            .cursos__form__group
+                input.cursos__form__input(type="text", placeholder="Nombre", name="nombre", id="nombre")
+                label.cursos__form__label(for="nombre") Nombre
+            .cursos__form__group
+                input.cursos__form__input(type="email", placeholder="Email", name="email", id="email")
+                label.cursos__form__label(for="email") Email
+            .cursos__form__group
+                input.cursos__form__input(type="text", placeholder="Teléfono", name="telefono", id="telefono")
+                label.cursos__form__label(for="telefono") Teléfono
+            .cursos__form__group
+                select.cursos__form__input.cursos__form__input--select(name="periodo", id="periodo")
+                    option(value="", disabled, selected) Periodo de Ingreso
+                    option(value="Periodo 1") Periodo 1
+                    option(value="Periodo 2") Periodo 2
+                    
+        .cursos__form__right
+            .cursos__form__group
+                textarea.cursos__form__input.cursos__form__input--textarea(placeholder="Mensaje", name="mensaje", id="mensaje")
+                label.cursos__form__label(for="mensaje") Mensaje
+            .cursos__form__group
+                button.cursos__form__cta(type="submit") Enviar

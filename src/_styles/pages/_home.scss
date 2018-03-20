@@ -54,7 +54,6 @@
 
                     @include mq(sm){
                         left: 15%;
-
                     }
                 }
             }
@@ -195,6 +194,12 @@
         &__title {
             @include title($color:$altColor);
             text-align: center;
+        }
+
+        &__slider {
+            .slick-dots{
+                bottom: -20px;
+            }
         }
 
         &__slide {

@@ -1,0 +1,222 @@
+extends ../../_layouts/base
+
+include ../../_modules/cursos-form/cursos-form
+include ../../_modules/slider/slider
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../'
+
+block content
+    main.cursos.cursos--full-stack
+        section.cursos__hero
+            .cursos__hero__overlay
+            .cursos__hero__data
+                h1.cursos__hero__title
+                    .cursos__icon
+                        img(src="/images/home/icon-full-stack.png")
+                    span Java web fullstack developer
+                p.cursos__hero__desc Primer Bootcamp Internacional líder en Europa, ahora en Buenos Aires! Curso Intensivo de 4 meses.
+            +cursos-form
+            
+        section.cursos__body
+            .container-fluid
+                .row
+                    .col-xs-24.col-md-6
+                        .cursos__sidebar
+                            button.cursos__sidebar__toggle 
+                                i.material-icons keyboard_arrow_left
+                            .cursos__sidebar__heading
+                                .cursos__icon.cursos__icon--small
+                                    img(src="/images/home/icon-full-stack.png")
+                                span Java web fullstack developer
+                                
+                            ul.cursos__sidebar__index
+                                
+                    .col-xs-24.col-md-18
+                        section.cursos__features(id="features", data-index="features", data-name="Características")
+                            h2.cursos__body__title Caracteristicas
+                            ul.cursos__features__list
+                                each item in site.data.fullstack.features.list
+                                    li.cursos__features__item
+                                        .cursos__features__item__wrapper
+                                            .cursos__features__item__icon
+                                                img(src=item.icon)
+                                            .cursos__features__item__data
+                                                h3.cursos__features__item__title!= item.title
+                                                p.cursos__features__item__desc= item.desc
+                                        
+                        section.cursos__info(id="info", data-index="info", data-name="Información Básica")
+                            h2.cursos__body__title Información básica
+                            .row
+                                .col-xs-24.col-sm-18.col-sm-offset-3
+                                    p.cursos__info__intro= site.data.fullstack.info.intro
+                                    .row
+                                        .col-xs-24.col-sm-12
+                                            .cursos__info__block
+                                                h3.cursos__info__block__title Próximos sesiones del programa:
+                                                p.cursos__info__block__text 16 Abril 2018 – 3 Agosto 2018
+                                                p.cursos__info__block__text 4 Junio 2018 – 21 Septiembre 2018
+                                        .col-xs-24.col-sm-12
+                                            .cursos__info__block
+                                                h3.cursos__info__block__title Precio del Programa:
+                                                p.cursos__info__block__text Matricula: $22,000
+                                                p.cursos__info__block__text Programa de 4 meses: $88,000
+                            
+                            .row
+                                .col-xs-24.col-sm-16
+                                    h3.cursos__info__subtitle DESDE EL 1 de ABRIL disfrutá descuentos especiales
+                                    ul.cursos__info__plans
+                                        each plan in site.data.fullstack.info.plans
+                                            li.cursos__info__plans__item
+                                                .cursos__info__plans__item__icon
+                                                    img(src=plan.icon)
+                                                .cursos__info__plans__item__text
+                                                    p!=plan.text
+                                                
+                                .col-xs-24.col-sm-8
+                                    .cursos__info__earlybird
+                                        .cursos__info__earlybird__block
+                                            h4 HASTA EL 31 de MARZO
+                                            p Early Bird: Se parte de la primera promoción de argentinos de este bootcamp europeo. Si sos de los que la ven venir antes que el resto, esta promo es para vos, sucede una vez, después no se repite y expira!
+                                        .cursos__info__earlybird__sub
+                                            p
+                                                strong Matricula:
+                                                | $0,00
+                                            p 
+                                                strong Programa de 4 meses:
+                                                | $64.000
+                            .row
+                                .col-xs-24.cursos__info__complemento
+                                    p Los beneficios no son acumulables
+                                    p Tenemos múltiples opciones de pago en función de las necesidades y circunstancias del alumno
+                            
+                        section.cursos__learning(id="learning", data-index="learning", data-name="Lo que aprenderás")
+                            h2.cursos__body__title Lo que aprenderás
+                            +slider('cursos__learning__slider', 'multi')
+                                each item in site.data.fullstack.learning.slider
+                                    .cursos__learning__slide
+                                        img(src=item)
+                            ul.cursos__learning__items
+                                each item in site.data.fullstack.learning.items
+                                    li.cursos__learning__items__item
+                                        .cursos__learning__items__item__img
+                                            img(src=item.img)
+                                        h3.cursos__learning__items__item__title= item.title
+                                        p.cursos__learning__items__item__text= item.text
+                        
+                        section.cursos__day(id="day", data-index="day", data-name="Un día con nosotros")                
+                            h2.cursos__body__title Un dia con nosotros
+                            .cursos__day__timeline
+                                ul.cursos__day__timeline__times
+                                    each item, index in site.data.fullstack.timeline
+                                        li.cursos__day__timeline__time(data-target="day-#{index}")
+                                            span._circle
+                                                i.fa.fa-check
+                                            span._time= item.time
+                                .cursos__day__timeline__descriptions
+                                    each item, index in site.data.fullstack.timeline
+                                        .cursos__day__timeline__description(data-description="day-#{index}")
+                                            h4.cursos__day__timeline__description__title= item.title
+                                            p.cursos__day__timeline__description__desc= item.desc
+                        
+                        section.cursos__programa(id="programa", data-index="programa", data-name="Programa") 
+                            h2.cursos__body__title El programa por semanas
+                            .row
+                                .col-xs-24.col-sm-18.col-sm-offset-3
+                                    +slider('cursos__programa__slider', 'multi')
+                                        each item, index in site.data.fullstack.programa
+                                            .cursos__programa__item(class="cursos__programa__item--#{index + 1}")
+                                                .cursos__programa__item__bar
+                                                .cursos__programa__item__data
+                                                    h4.cursos__programa__item__title= item.title
+                                                    p.cursos__programa__item__weeks= item.weeks
+                                                    p.cursos__programa__item__desc= item.desc
+                    
+                        section.cursos__admisiones(id="admisiones", data-index="admisiones", data-name="Admisiones")
+                            h2.cursos__body__title Admisiones
+                            .row
+                                .col-xs-24.col-sm-12.col-md-6
+                                    p.cursos__admisiones__intro A diferencia de la mayoría de cursos intensivos de programación, nosotros no requerimos que tengas ningún conocimiento ni experiencia previos. Lo que sí exigimos es motivación y la mentalidad adecuada  para garantizar que podrás alcanzar los objetivos planteados.
+                                .col-xs-24.col-sm-12.col-md-6
+                                    .cursos__admisiones__step
+                                        .cursos__admisiones__step__circle 1
+                                        h3.cursos__admisiones__step__title Envía tu solicitud
+                                        p.cursos__admisiones__step__desc Envianos tus datos de contacto y te llamaremos para hablar más sobre tu perfil y tu motivación para programar 
+                                .col-xs-24.col-sm-12.col-md-6
+                                    .cursos__admisiones__step
+                                        .cursos__admisiones__step__circle 2
+                                        h3.cursos__admisiones__step__title Conocenos
+                                        p.cursos__admisiones__step__desc Si estás interesado en nuestro programa, te invitaremos a visitar nuestro espacio para conocernos mejor
+                                .col-xs-24.col-sm-12.col-md-6
+                                    .cursos__admisiones__step
+                                        .cursos__admisiones__step__circle 3
+                                        h3.cursos__admisiones__step__title Inscribete
+                                        p.cursos__admisiones__step__desc Y si la visita va bien, te guiaremos a través de todos los pasos que tenés que seguir para reservar tu lugar y ¡quedarte con nosotros!
+                                
+                        section.cursos__estudiantes(id="estudiantes", data-index="estudiantes", data-name="Estudiantes") 
+                            h2.cursos__body__title Estudiantes
+                            .row
+                                .col-xs-24.col-sm-12.col-md-6
+                                    p.cursos__estudiantes__intro A diferencia de la mayoría de cursos intensivos de programación, nosotros no requerimos que tengas ningún conocimiento ni experiencia previos. Lo que sí exigimos es motivación y la mentalidad adecuada  para garantizar que podrás alcanzar los objetivos planteados.
+                                .col-xs-24.col-sm-12.col-md-6
+                                    .cursos__estudiantes__feature
+                                        .cursos__estudiantes__feature__bar
+                                        h4.cursos__estudiantes__feature__title Entusiasmo
+                                        p.cursos__estudiantes__feature__desc Los alumnos a los que mejor les va en nuestra Code Academy son aquellos que se implican de lleno en el programa. Buscamos personas a las que les entusiasmen los retos y resolver problemas.
+                                
+                                .col-xs-24.col-sm-12.col-md-6
+                                    .cursos__estudiantes__feature
+                                        .cursos__estudiantes__feature__bar
+                                        h4.cursos__estudiantes__feature__title Diversidad
+                                        p.cursos__estudiantes__feature__desc Nuestros alumnos poseen trayectorias y experiencias muy diferentes, y esta diversidad contribuye a generar un ambiente enormemente creativo que nos ayudará a progresar a lo largo del programa.
+                                        
+                                .col-xs-24.col-sm-12.col-md-6
+                                    .cursos__estudiantes__feature
+                                        .cursos__estudiantes__feature__bar
+                                        h4.cursos__estudiantes__feature__title Compromiso
+                                        p.cursos__estudiantes__feature__desc Aprender a programar es una cuestión de compromiso. Los programas intensivos de programación exigen un esfuerzo significativo por parte del alumno. Son dieciséis semanas intensas que te cambiarán la vida.
+                                
+                            .row
+                                .col-xs-24.col-sm-12.cursos__estudiantes__who
+                                    h3.cursos__estudiantes__who__title ¿A quién va dirigido este programa?
+                                    each item in site.data.fullstack.estudiantes.who
+                                        .cursos__estudiantes__who__item
+                                            h3.cursos__estudiantes__who__item__title= item.title
+                                            p.cursos__estudiantes__who__item__desc= item.desc
+                                    
+                                .col-xs-24.col-sm-12.cursos__estudiantes__work
+                                    h3.cursos__estudiantes__work__title Algunos de los proyectos realizados por nuestros alumnos
+                                    +slider('cursos__estudiantes__work__slider')
+                                        .cursos__estudiantes__work__slide
+                                            img(src="/images/full-stack/sample1.jpg")
+                                        .cursos__estudiantes__work__slide
+                                            img(src="/images/full-stack/sample2.jpg")
+                                
+                        section.cursos__carreras(id="carreras", data-index="carreras", data-name="Carreras") 
+                            .row
+                                .col-xs-24.col-sm-16.col-sm-offset-4
+                                    h2.cursos__body__title Carreras
+                                    p.cursos__carreras__intro Estas son algunas de las empresas que están contratando a nuestros alumnos como Full Stack Software Developers.
+                            .row
+                                each item in site.data.home.bepart.companies
+                                    .col-xs-12.col-sm-6
+                                        img.cursos__carreras__logo(src=item)
+                        
+                        section.cursos__faqs(id="faqs", data-index="faqs", data-name="Preguntas Frecuentes") 
+                            .row
+                                .col-xs-24.col-sm-16.col-sm-offset-4
+                                    h2.cursos__body__title Preguntas Frecuentes
+                                    p.cursos__faqs__intro Estas son algunas de las preguntas que quizás te estás haciendo. Si no encontrás la respuesta, contactate con nosotros y te atenderemos con gusto.
+                            
+                            .row
+                                .col-xs-24.col-md-18.col-md-offset-3
+                                    ul.cursos__faqs__list
+                                        each item in site.data.fullstack.faqs
+                                            li.cursos__faqs__item
+                                                .cursos__faqs__item__question
+                                                    p= item.q
+                                                .cursos__faqs__item__answer
+                                                    p= item.a
+                        
+        include ../../_modules/contacto/contacto

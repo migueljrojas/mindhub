@@ -22,12 +22,9 @@ var Header = function() {
     });
 
     // Select all links with hashes
-    $('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .not('[class="js-trigger"]')
-    .click(function(event) {
+    var links = $('a[href*="#"]');
+
+    $(document).on('click', 'a[href*="#"]', function(event) {
     // On-page links
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')

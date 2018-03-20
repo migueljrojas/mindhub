@@ -1,0 +1,166 @@
+{
+    "features":{
+        "list":[
+            {
+                "title":"Pensá como un <strong>Desarrollador</strong>",
+                "desc":"Aprenderás a pensar, solucionar poblemas tecnológiocs, diseñar soluciones y programar",
+                "icon":"/images/full-stack/icon-think.png"
+            },
+            {
+                "title":"Metodología <strong>learning by doing</strong>",
+                "desc":"Cursos totalmente prácticos y enfocados a lo que las empresas tecnológicas estan buscando.",
+                "icon":"/images/full-stack/icon-learn.png"
+            },
+            {
+                "title":"Apoyo y <strong>coaching</strong>",
+                "desc":"Apoyo profesional en el desarrollo de habilidades blandas y de industria.",
+                "icon":"/images/full-stack/icon-coaching.png"
+            },
+            {
+                "title":"Encontrá <strong>trabajo</strong>",
+                "desc":"Te ayudamos a conseguir trabajo. ¡Aprendé, progresá, trabajá!",
+                "icon":"/images/full-stack/icon-job.png"
+            }
+        ]
+    },
+    "info":{
+        "intro":"Este programa está diseñado para entrenar en 640 horas repartidas en 4 meses a personas sin ninguna experiencia previa en programación y convertirlos en un Full Stack Developer empleable en cualquier proyecto de desarrollo. Si no sabés nada de programación y estás motivado para encarar un desafío durante 16 semanas e iniciarte en una nueva profesión, éste es tu programa.",
+        "plans":[
+            {
+                "icon":"/images/home/descuento-healscamp.png",
+                "text":"<strong>Healscamp​:</strong> Si sos una chica queriendo abrirte camino en el mundo de la tecnologia, acá tenés tu lugar<br><strong>Matrícula:</strong> $0,00<br><strong>Programa de 4 meses:</strong> 88,000<br><strong>Descuento total aplicado:</strong> 20%"
+            },
+            {
+                "icon":"/images/home/descuento-twistcamp.png",
+                "text":"<strong>Healscamp​:</strong> Si sos un profesional con experiencia mayor a 40 años, queremos tenerte con nosotros<br><strong>Matrícula:</strong> $0,00<br><strong>Programa de 4 meses:</strong> 88,000<br><strong>Descuento total aplicado:</strong> 20%"
+            },
+            {
+                "icon":"/images/home/descuento-friends.png",
+                "text":"<strong>Healscamp​:</strong> Si tenes un amig@ o familiar con tus mismas ganas, traelo que tenes 11,000 motivos para hacerlo. No tienen que sortear el beneficio, los 2 lo tienen por igual.<br><strong>Matrícula:</strong> $11.000,00<br><strong>Programa de 4 meses:</strong> 88,000<br><strong>Descuento total aplicado:</strong> 20%"
+            }
+        ]
+    },
+    "learning":{
+        "slider":[
+            "/images/full-stack/icon-html.png",
+            "/images/full-stack/icon-css.png",
+            "/images/full-stack/icon-js.png",
+            "/images/full-stack/icon-json.png"
+        ],
+        "items":[
+            {
+                "title":"100% LEARNING BY DOING",
+                "text":"Utilizamos proyectos reales para que aprendas a programar practicando, realizando tu propio trabajo de manera independiente. Nuestros tutores te ayudarán y valorarán tu progreso.",
+                "img":"/images/full-stack/item-learning.jpg"
+            },
+            {
+                "title":"BÚSQUEDA DE EMPLEO",
+                "text":"Como queremos ayudarte a que encuentres trabajo, te ofrecemos; coaching para desarrollar las habilidades blandas, como trabajo en equipo, creatividad, comunicación oral y escrita, etc. y gestionar tus fortalezas y debilidades personales, junto a un experto reclutador del mundo de la tecnología quien te aportará las claves para mejorar tu CV. También te postularemos en la red de empresas que conforman nuestro ecosistema.",
+                "img":"/images/full-stack/item-learning.jpg"
+            },
+            {
+                "title":"¡PASALO BIEN!",
+                "text":"Tendrás un montón de oportunidades para divertirte con tus compañeros. ¡Estate atento a las publicaciones de nuestros eventos!",
+                "img":"/images/full-stack/item-learning.jpg"
+            }
+        ]
+    },
+    "timeline":[
+        {
+            "time":"9:00",
+            "title":"Puesta en marcha",
+            "desc":"Empezá la mañana revisando con tus compañeros de curso lo que hiciste el día anterior, dónde te quedaste trabado y cómo terminan solucionando los problemas. ¡Es una oportunidad para que se animen y motiven entre ustedes de cara al día que tienen por delante!"
+        },
+        {
+            "time":"9:30",
+            "title":"Hora 2",
+            "desc":"Empezá la mañana revisando con tus compañeros de curso lo que hiciste el día anterior, dónde te quedaste trabado y cómo terminan solucionando los problemas. ¡Es una oportunidad para que se animen y motiven entre ustedes de cara al día que tienen por delante!"
+        },
+        {
+            "time":"13:00",
+            "title":"Hora 3",
+            "desc":"Empezá la mañana revisando con tus compañeros de curso lo que hiciste el día anterior, dónde te quedaste trabado y cómo terminan solucionando los problemas. ¡Es una oportunidad para que se animen y motiven entre ustedes de cara al día que tienen por delante!"
+        },
+        {
+            "time":"14:00",
+            "title":"Hora 4",
+            "desc":"Empezá la mañana revisando con tus compañeros de curso lo que hiciste el día anterior, dónde te quedaste trabado y cómo terminan solucionando los problemas. ¡Es una oportunidad para que se animen y motiven entre ustedes de cara al día que tienen por delante!"
+        },
+        {
+            "time":"18:00",
+            "title":"Hora 5",
+            "desc":"Empezá la mañana revisando con tus compañeros de curso lo que hiciste el día anterior, dónde te quedaste trabado y cómo terminan solucionando los problemas. ¡Es una oportunidad para que se animen y motiven entre ustedes de cara al día que tienen por delante!"
+        }
+    ],
+    "programa":[
+        {
+            "title":"Tu primera web",
+            "weeks":"Semanas 1 a 4",
+            "desc":"Metete de lleno en el mundo de la programación adquiriendo conocimientos sobre el Front-End. Aprenderás HTML5, CSS3 y JavaScript. Poco a poco implementarás las mejores  prácticas recomendadas."
+        },
+        {
+            "title":"Mobile web",
+            "weeks":"Semanas 5 a 8",
+            "desc":"Aprendé a hacer webs que se vean bien en todos los dispositivos. En este módulo diseñarás y crearás una Mobile Web y aprenderás a usar Bootstrap. Empiezan las sesiones de Coaching para trabajar tus Habilidades Personales."
+        },
+        {
+            "title":"Backend con JAVA",
+            "weeks":"Semanas 9 a 16",
+            "desc":"Creá el juego “Batalla Naval” para web, y aprendé a manejar los perfiles de los jugadores y la puntuación. Usarás Java y Spring Boot Framework. También te ayudaremos con el CV, las entrevistas, LinkedIn, networking..."
+        }
+    ],
+    "estudiantes":{
+        "who":[
+            {
+                "title":"Egresados secundarios",
+                "desc":"¿Terminaste el secundario y no estás dispuesto a embarcarte en años de estudios universitarios? Querés tener una salida laboral rápida y bien remunerada? Este es un programa intensivo de Java, HTML5, CSS3 y Javascript. Además de aprender metodologías ágiles de desarrollo y programación estructurada, todo lo que harás será sobre proyectos reales. Así que tu trabajo como desarrollador comienza con la primer clase."
+            },
+            {
+                "title":"Universitarios recién graduados o próximos a graduarse",
+                "desc":"¿Acabás de terminar la universidad o estás cursando? Con este programa vas a adquirir las habilidades necesarias para ganar experiencia laboral, horas de desarrollo, y encontrar un empleo de forma inmediata en una empresa o bien lanzar tu propio negocio."
+            },
+            {
+                "title":"Los profesionales que quieran hacer un reskilling",
+                "desc":"¿Querés hacer un giro en tu carrera actual? Sabes COBOL, ABAP, Natural, Visual y otros tantos lenguajes, pero sentís que no estás subido a la ola digital? Aprender a desarrollar webs y aplicaciones para móviles es una gran idea. Se trata de una profesión altamente calificada y, al terminar el programa, serás un firme candidato a darle un envión a tu proyección laboral y encontrar un empleo más atractivo y mejor remunerado. Tenemos beneficios especiales para los profesionales mayores de 40 años."
+            },
+            {
+                "title":"Emprendedores",
+                "desc":"Si estás pensando en emprender, este programa te ayudará a adquirir las habilidades necesarias para construir un MVP (producto mínimo viable) de tu negocio digital, desarrollando tanto el front como el back end."
+            }
+        ]
+    },
+    "faqs":[
+        {
+            "q":"¿Por qué Java?",
+            "a":"Porque es el lenguaje de programación más demandado hoy  en el mundo y el lenguaje principal para dispositivos móviles  en Android. Por eso te vamos a ayudar a encontrar un empleo  al terminar el programa. Hay más de miles puestos vacantes  como Java Developer en Argentina."
+        },
+        {
+            "q":"¿Los cursos son en inglés o en español?",
+            "a":"Porque es el lenguaje de programación más demandado hoy  en el mundo y el lenguaje principal para dispositivos móviles  en Android. Por eso te vamos a ayudar a encontrar un empleo  al terminar el programa. Hay más de miles puestos vacantes  como Java Developer en Argentina."
+        },
+        {
+            "q":"¿Por qué Java?",
+            "a":"Porque es el lenguaje de programación más demandado hoy  en el mundo y el lenguaje principal para dispositivos móviles  en Android. Por eso te vamos a ayudar a encontrar un empleo  al terminar el programa. Hay más de miles puestos vacantes  como Java Developer en Argentina."
+        },
+        {
+            "q":"¿Los cursos son en inglés o en español?",
+            "a":"Porque es el lenguaje de programación más demandado hoy  en el mundo y el lenguaje principal para dispositivos móviles  en Android. Por eso te vamos a ayudar a encontrar un empleo  al terminar el programa. Hay más de miles puestos vacantes  como Java Developer en Argentina."
+        },
+        {
+            "q":"¿Por qué Java?",
+            "a":"Porque es el lenguaje de programación más demandado hoy  en el mundo y el lenguaje principal para dispositivos móviles  en Android. Por eso te vamos a ayudar a encontrar un empleo  al terminar el programa. Hay más de miles puestos vacantes  como Java Developer en Argentina."
+        },
+        {
+            "q":"¿Los cursos son en inglés o en español?",
+            "a":"Porque es el lenguaje de programación más demandado hoy  en el mundo y el lenguaje principal para dispositivos móviles  en Android. Por eso te vamos a ayudar a encontrar un empleo  al terminar el programa. Hay más de miles puestos vacantes  como Java Developer en Argentina."
+        },
+        {
+            "q":"¿Por qué Java?",
+            "a":"Porque es el lenguaje de programación más demandado hoy  en el mundo y el lenguaje principal para dispositivos móviles  en Android. Por eso te vamos a ayudar a encontrar un empleo  al terminar el programa. Hay más de miles puestos vacantes  como Java Developer en Argentina."
+        },
+        {
+            "q":"¿Los cursos son en inglés o en español?",
+            "a":"Porque es el lenguaje de programación más demandado hoy  en el mundo y el lenguaje principal para dispositivos móviles  en Android. Por eso te vamos a ayudar a encontrar un empleo  al terminar el programa. Hay más de miles puestos vacantes  como Java Developer en Argentina."
+        }
+    ]
+}

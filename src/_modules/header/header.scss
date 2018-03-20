@@ -199,6 +199,10 @@
                    width: 100%;
                }
            }
+
+           &:focus {
+               text-decoration: none;
+           }
        }
    }
 
